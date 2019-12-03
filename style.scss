@@ -1,0 +1,80 @@
+
+
+@import 'footer';
+@import 'articles';
+@import 'header';
+@import 'container-features';
+@import 'pricing';
+@import 'advantages';
+@import 'contacts';
+@import 'article1';
+@import 'contacts';
+@import 'reviews';
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin: auto;
+}
+
+// .soc-links {
+//     display: flex;
+//     align-items: center;
+//     margin-right: 150px;
+//     margin-left: 105px;
+//     width: 50%;
+//     justify-content: space-between;
+//     cursor: pointer;
+// }
+    .soc-links {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+.soc-links li {
+    list-style-type: none;
+}
+
+.social-media p {
+    font-family: Montserrat;
+    color: #86878B;
+    font-size: 14px;
+}
+
+.social-media h1 {
+    display: flex;
+    margin-top: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+    align-items: center;
+}
+
+
+.social-media {
+    height: 105px;
+    margin-left: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 700px) {
+    .social-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        width: 320px;    
+    }
+
+    .soc-links li {
+        display: none;
+    }
+}

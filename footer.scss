@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    height: 150px;
+    width: 1400px;
+    background-color: #1C1C1C;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-soc-links {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-soc-links li {
+    list-style-type: none;
+
+}
+
+.footer p {
+    align-items: center;
+    width: 40%;
+    margin-right: 135px;
+    margin-left: 360px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-size: 18px;
+    font-family: Montserrat;
+}

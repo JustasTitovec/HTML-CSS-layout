@@ -1,0 +1,135 @@
+
+
+.header {
+    display: flex;
+    height: 70px;
+    width: 1400px;
+    background-color: #1C1C1C;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -10px;
+    position: fixed;
+    z-index: 2;
+}
+
+
+.nav-links a:hover {
+    opacity: 1;;
+    padding: 0 0 24px;
+    transition: 0.2s ease-in-out;
+    border-bottom: solid 2px #E27866;
+
+}
+
+.nav-links {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    
+}
+
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.header {
+    padding: 0;
+  }
+
+
+
+@media screen and (max-width:768px) {
+  
+   
+      .header ul {
+        width: 100%;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+      }
+      .header ul.open {
+        max-height: 100vh;
+      }
+      .header ul li {
+        width: 100%;
+      }
+      .header ul li a {
+        padding: 0;
+      }
+
+      .header {
+          
+      }
+
+    .header .navbar-toggler {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+      }
+      
+      .header .navbar-toggler span,
+      .header .navbar-toggler span::before,
+      .header .navbar-toggler span::after {
+        display: block;
+        content: '';
+        background-color: #fff;
+        height: 3px;
+        width: 28px;
+        border-radius: 4px;
+        transition: all ease-in-out 0.3;
+      }
+      
+      .header .navbar-toggler span::before {
+        transform: translateY(-8px);
+      }
+      
+      .header .navbar-toggler span::after {
+        transform: translateY(5px);
+      }
+      
+      .header .navbar-toggler.open-navbar-toggler span {
+        background-color: transparent;
+      }
+      
+      .header .navbar-toggler.open-navbar-toggler span::before {
+        transform: translateY(0px) rotate(45deg);
+      }
+      
+      .header .navbar-toggler.open-navbar-toggler span {
+        transform: translateY(-3px) rotate(-45deg);
+      }
+     
+      
+}
